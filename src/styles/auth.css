@@ -1,0 +1,128 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  background: #fff;
+  overflow: hidden;
+}
+
+.auth-left {
+  width: 58%;
+  background-image: linear-gradient(
+      rgba(111, 73, 255, 0.72),
+      rgba(255, 79, 180, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200");
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-right {
+  width: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 40px;
+  background: #fff;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-box h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1a1a2e;
+}
+
+.auth-subtitle {
+  color: #6b7280;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+.auth-field {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.auth-field span {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+.input-box {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 14px 4px;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.input-box::placeholder {
+  color: #9ca3af;
+}
+
+.input-box:focus {
+  border-bottom: 2px solid #8f63ff;
+}
+
+.auth-btn {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #6f49ff, #ff4fb4);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.auth-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.auth-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.bottom-link {
+  margin-top: 24px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.bottom-link a {
+  text-decoration: none;
+  color: #6f49ff;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+@media (max-width: 900px) {
+  .auth-left {
+    display: none;
+  }
+
+  .auth-right {
+    width: 100%;
+    padding: 32px 24px;
+  }
+
+  .form-box h1 {
+    font-size: 32px;
+  }
+}
